@@ -1,0 +1,30 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <script language="javascript">
+        function validate(){
+        var uname;
+        uname=document.forms["form1"].uname.value;
+        if(uname==""){
+            alert("entername");
+        }
+    else{
+        alert("success");
+    }}
+    </script>
+</head>
+<body>
+    <form name="form1">
+        <table>
+            <tr>
+                <td>USERNAME</td>
+                <td><input type="text" name="uname"></input</td>
+            </tr>
+            <tr><td colspan=2 align:center><input type="button" onclick="validate()" name="button" value="submit"/></td></tr>
+        </table>
+    </form>
+</body>
+</html>
